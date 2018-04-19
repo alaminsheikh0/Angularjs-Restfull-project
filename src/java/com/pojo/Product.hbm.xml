@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2018 6:31:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Product" table="product" catalog="rdb" optimistic-lock="version">
+        <id name="pid" type="java.lang.Integer">
+            <column name="pid" />
+            <generator class="identity" />
+        </id>
+        <property name="pname" type="string">
+            <column name="pname" length="45" />
+        </property>
+        <property name="ptype" type="string">
+            <column name="ptype" length="45" />
+        </property>
+        <property name="pdesc" type="string">
+            <column name="pdesc" length="45" />
+        </property>
+        <property name="pprice" type="java.lang.Double">
+            <column name="pprice" precision="22" scale="0" />
+        </property>
+        <property name="pstock" type="java.lang.Integer">
+            <column name="pstock" />
+        </property>
+        <property name="porigin" type="string">
+            <column name="porigin" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

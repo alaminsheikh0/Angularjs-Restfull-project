@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2018 6:31:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Department" table="department" catalog="rdb" optimistic-lock="version">
+        <id name="did" type="java.lang.Integer">
+            <column name="did" />
+            <generator class="identity" />
+        </id>
+        <property name="dname" type="string">
+            <column name="dname" length="45" />
+        </property>
+        <property name="ddec" type="string">
+            <column name="ddec" length="45" />
+        </property>
+        <property name="dmp" type="string">
+            <column name="dmp" length="45" />
+        </property>
+        <property name="dceo" type="string">
+            <column name="dceo" length="45" />
+        </property>
+        <property name="dbudget" type="java.lang.Double">
+            <column name="dbudget" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
